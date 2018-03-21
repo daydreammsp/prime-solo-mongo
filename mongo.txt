@@ -1,0 +1,16 @@
+// 1. db.createCollection('orders');
+
+//2. db.orders.insert({date : '2017-02-03'});
+WriteResult({ "nInserted" : 1 })
+> db.orders.insert({date : '2017-04-04'});
+WriteResult({ "nInserted" : 1 })
+> db.orders.insert({date : '2017-01-02'});
+WriteResult({ "nInserted" : 1 })
+
+//3. db.orders.find().pretty()
+{ "_id" : ObjectId("5ab1b8df069dac6f08638d26"), "date" : "2017-02-03" }
+{ "_id" : ObjectId("5ab1b929069dac6f08638d27"), "date" : "2017-04-04" }
+{ "_id" : ObjectId("5ab1b954069dac6f08638d28"), "date" : "2017-01-02" }
+> 
+
+4. 
